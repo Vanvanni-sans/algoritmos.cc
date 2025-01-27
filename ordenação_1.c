@@ -7,8 +7,8 @@
 #include <limits.h>
 
 typedef enum {false, true} bool;
-typedef short Tdado;
-typedef short Tnum;
+typedef long Tdado;
+typedef long Tnum;
 
 void troca(Tdado *x, Tdado *y) {
 	Tdado aux = *x;
@@ -19,7 +19,7 @@ void troca(Tdado *x, Tdado *y) {
 void escreve(Tdado V[], Tnum n) {
 	printf("[");
 	for (Tnum i = 0; i < n; i++) {
-		printf("%hd", V[i]);
+		printf("%ld", V[i]);
 		if (i < n - 1) {
 			printf(", ");
       }
@@ -94,8 +94,8 @@ void merge(Tdado V[], Tnum low, Tnum mid, Tnum high) {
 	for (Tnum j = 0; j < n2; j++) {
 		right[j] = V[mid + 1 + j];
 	}
-	left[n1] = SHRT_MAX;
-	right[n2] = SHRT_MAX;
+	left[n1] = LONG_MAX;
+	right[n2] = LONG_MAX;
 	
 	for (Tnum k = low; k <= high; k++) {
 		if (left[i] <= right[j]) {
@@ -182,7 +182,7 @@ int main() {
 	Tnum n, k, p; // quantidade de números a serem gerados e indice
 	clock_t tempo;
 	
-	scanf("%hd", &n);
+	scanf("%ld", &n);
 		
 	srand(time(NULL));	// inicializa o gerador de números aleatórios
 	
@@ -200,12 +200,12 @@ int main() {
 	tempo = clock();
 	
 	// descomente abaixo o algoritmo que deseja testar
-	// bubbleSort(V, n);
+	 bubbleSort(V, n);
 	// shakerSort(V, n);
 	// insertionSort(V, n);
 	// selectionSort(V, n);
 	// mergeSort(V, 0, n - 1);
-	// quickSort(V, 0, n - 1);
+	 //quickSort(V, 0, n - 1);
 	
 	tempo = clock() - tempo;
 	printf("\n");
@@ -213,16 +213,16 @@ int main() {
 	escreve(V, n);
 	printf("Tempo gasto = %f segundos\n", ((float)tempo) / CLOCKS_PER_SEC);
 	k = rand() % MAX + 1;
-	printf("Procurando por %hd...\n", k);
+	printf("Procurando por %ld...\n", k);
 
 	// descomente o algoritmo de busca que deseja utilizar
-	// p = seqSearch(k, V, n);
+	 p = seqSearch(k, V, n);
    	// p = binSearch(k, V, n);
 
 	if (p < 0)
 		printf(" Não encontrado!\n");
 	else
-		printf("%hd encontrado na posição %hd.\n", k, p); 
-		*/
+		printf("%ld encontrado na posição %ld.\n", k, p); 
+		
 	return 0;
 }
