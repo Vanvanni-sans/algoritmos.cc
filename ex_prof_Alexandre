@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+//ex 1
+
+int num11 = 777;
+printf("ex1 :\n%d\n", num11);
+return 0;
+
+//ex 2
+
+
+//ex 3
+//ex 4
+//ex 5
+//ex 6
+//ex 7
+//ex 8
+//ex 9
+//ex 10
+//ex 11
+}
