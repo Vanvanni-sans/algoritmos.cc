@@ -2,20 +2,19 @@
 
 int main(){
 //ex 1
-
+/*
 int num11 = 777;
 printf("ex1 :\n%d\n", num11);
-return 0;
 
 //ex 2
 
 int num21 = 3, num22 = 4;
-printf("ex3 :\nA soma das variaveis num21(%d) e num22(%d) é igual a %d\n", num21, num22, (num21 - num22));
+printf("ex2 :\nA soma das variaveis num21(%d) e num22(%d) é igual a %d\n", num21, num22, (num21 + num22));
 
 //ex 3
-
+*/
 float num31 = 3.3 , num32 = 3.4;
-printf("ex3 :\nA subtração das variaveis num31(%d) e num32(%d) é igual a %d\n", num31, num32, (num31 - num32));
+printf("ex3 :\nA subtração das variaveis num31(%.1f) e num32(%.1f) é igual a %.2f\n", num31, num32, (num31 - num32));
 
 //ex 4
 //ex 5
