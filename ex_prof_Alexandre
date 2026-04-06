@@ -1,8 +1,12 @@
 #include <stdio.h>
 
+//nos exercicios abaixo as variaveis vão conter 2 números 
+//o primeiro indicando a qual exercicio pertence e o segundo a ordem da variável
+//exemplo:num5(quinto exercicio)1(primeira variavel)
+
 int main(){
-//ex 1
 /*
+//ex 1
 int num11 = 777;
 printf("ex1 :\n%d\n", num11);
 
@@ -12,14 +16,33 @@ int num21 = 3, num22 = 4;
 printf("ex2 :\nA soma das variaveis num21(%d) e num22(%d) é igual a %d\n", num21, num22, (num21 + num22));
 
 //ex 3
-*/
+
 float num31 = 3.3 , num32 = 3.4;
 printf("ex3 :\nA subtração das variaveis num31(%.1f) e num32(%.1f) é igual a %.2f\n", num31, num32, (num31 - num32));
 
 //ex 4
+
+int num41 = 3, num42 = 4;
+printf("ex4 :\nA multiplicação das variaveis num41(%d) e num42(%d) é igual a %d\n", num41, num42, (num41 * num42));
+
 //ex 5
+
+float num51 = 8.4, num52 = 5.2;
+printf("ex 5:\nA divisao das variaveis num51(%f) e num52(%f) é igual a %f\n", num51, num52, (num51 / num52));
 //ex 6
+
+int num61;
+printf("ex6 :\nescreva um número:");
+scanf("%d", &num61);
+printf("\no dobro do valor digitado é: %d\n", (num61*2));
+*/
+
 //ex 7
+
+char letra = 'a';
+printf("ex 7:\nA letra da variavel letra é '%c'", letra);
+printf("\n");//não sei porque o print não funciona se eu colocar esse \n dentro do outro print
+
 //ex 8
 //ex 9
 //ex 10
