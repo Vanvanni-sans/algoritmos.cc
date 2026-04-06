@@ -35,7 +35,6 @@ int num61;
 printf("ex6 :\nescreva um número:");
 scanf("%d", &num61);
 printf("\no dobro do valor digitado é: %d\n", (num61*2));
-*/
 
 //ex 7
 
@@ -44,6 +43,14 @@ printf("ex 7:\nA letra da variavel letra é '%c'", letra);
 printf("\n");//não sei porque o print não funciona se eu colocar esse \n dentro do outro print
 
 //ex 8
+
+float num81;
+printf("ex 8:\nescreva um numero float:");
+scanf("%f", &num81);
+printf("\na soma da variavel num81(%f) com 10.5 é igual a %f", num81, (num81+10.5));
+printf("\n");
+
+*/
 //ex 9
 //ex 10
 //ex 11
