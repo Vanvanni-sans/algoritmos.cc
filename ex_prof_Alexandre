@@ -75,9 +75,42 @@ printf("ex 11\n a tabuada do 5 é\n");
 for(int i=1; i<21; i++){
     printf("5*%d = %d\n", i, (i*5));
 }
+
+//lista 2
+//ex 1
+
+int num11 = 5;
+printf("ex1:\no quadrado de %d é %d\n", num11, (num11 * num11));
+
+//ex 2
+
+int num21 = 2, num22 = 4;
+float div = (float)num21/num22;
+printf("ex 2:\nsoma = %d\nsubtracao = %d\nmultiplicacao = %d\ndivisão = %f\n", (num21+num22), (num21-num22), (num21*num22), div);
+
+//ex 3
+
+char letra31 = 'a', letra32 = 'b';
+printf("ex 3:\nas letras são %c%c\n", letra31, letra32);
 */
+//ex 4
+
+float num41 = 4.5;
+printf("ex 4\no num é %f\no dobro e = %f\na metade e %f\n", num41, (2*num41), (num41/2));
+
+//ex 5
 
 
+
+//ex 6
+
+
+
+//ex 7
+
+
+
+//ex 8
 
 return 0;
 }
