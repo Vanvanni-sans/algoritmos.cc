@@ -5,44 +5,52 @@
 //exemplo:num5(quinto exercicio)1(primeira variavel)
 
 int main(){
-/*
+
 //ex 1
 int num11 = 777;
+
 printf("ex1 :\n%d\n", num11);
 
 //ex 2
 
 int num21 = 3, num22 = 4;
+
 printf("ex2 :\nA soma das variaveis num21(%d) e num22(%d) é igual a %d\n", num21, num22, (num21 + num22));
 
 //ex 3
 
 float num31 = 3.3 , num32 = 3.4;
+
 printf("ex3 :\nA subtração das variaveis num31(%.1f) e num32(%.1f) é igual a %.2f\n", num31, num32, (num31 - num32));
 
 //ex 4
 
 int num41 = 3, num42 = 4;
+
 printf("ex4 :\nA multiplicação das variaveis num41(%d) e num42(%d) é igual a %d\n", num41, num42, (num41 * num42));
 
 //ex 5
 
 float num51 = 8.4, num52 = 5.2;
+
 printf("ex 5:\nA divisao das variaveis num51(%f) e num52(%f) é igual a %f\n", num51, num52, (num51 / num52));
 //ex 6
 
 int num61;
+
 printf("ex6 :\nescreva um número:");
 scanf("%d", &num61);
 printf("\no dobro do valor digitado é: %d\n", (num61*2));
 
 //ex 7
 char letra = 'a';
+
 printf("ex 7:\nA letra da variavel letra é '%c'\n", letra);
 
 //ex 8
 
 float num81;
+
 printf("ex 8:\nescreva um numero float:");
 scanf("%f", &num81);
 printf("\na soma da variavel num81(%f) com 10.5 é igual a %f\n", num81, (num81+10.5));
@@ -50,16 +58,19 @@ printf("\na soma da variavel num81(%f) com 10.5 é igual a %f\n", num81, (num81+
 
 //ex 9
 
-int num81 = 1, num82 = 2, num83 = 3, num84 = 4;
+int num91 = 1, num92 = 2, num93 = 3, num94 = 4;
 float media;
-media = (float)(num81+num82+num83+num84)/4;
+media = (float)(num91+num92+num93+num94)/4;
+
 printf("ex 9:\nA media das variaveis é igual a %f\n", media);
 
 //ex 10
 
 int num101, num102, diferenca = 0;
+
 printf("ex 10:\nEscreva dois numeros:");
 scanf("%d%d", &num101, &num102);
+
 if(num101==num102)
 printf("os numeros são iguais");
 if(num101>num102){
@@ -79,38 +90,62 @@ for(int i=1; i<21; i++){
 //lista 2
 //ex 1
 
-int num11 = 5;
-printf("ex1:\no quadrado de %d é %d\n", num11, (num11 * num11));
+int num121 = 5;
+
+printf("ex1:\no quadrado de %d é %d\n", num121, (num121 * num121));
 
 //ex 2
 
-int num21 = 2, num22 = 4;
-float div = (float)num21/num22;
-printf("ex 2:\nsoma = %d\nsubtracao = %d\nmultiplicacao = %d\ndivisão = %f\n", (num21+num22), (num21-num22), (num21*num22), div);
+int num221 = 2, num222 = 4;
+float div = (float)num221/num222;
+
+printf("ex 2:\nsoma = %d\nsubtracao = %d\nmultiplicacao = %d\ndivisão = %f\n", (num221+num222), (num221-num222), (num221*num222), div);
 
 //ex 3
 
-char letra31 = 'a', letra32 = 'b';
-printf("ex 3:\nas letras são %c%c\n", letra31, letra32);
-*/
+char letra321 = 'a', letra322 = 'b';
+
+printf("ex 3:\nas letras são %c%c\n", letra321, letra322);
 //ex 4
 
-float num41 = 4.5;
-printf("ex 4\no num é %f\no dobro e = %f\na metade e %f\n", num41, (2*num41), (num41/2));
+float num421 = 4.5;
+
+printf("ex 4\no num é %f\no dobro e = %f\na metade e %f\n", num421, (2*num421), (num421/2));
 
 //ex 5
 
+float c, k;
 
+printf("ex 5:\nescreva a temperatura em celsius:");
+scanf("%f", &c);
+k = (c*1.8)+32;
+printf("\na conversão em kelvin e = %.2f\n", k);
 
 //ex 6
 
+float valor;
 
+printf("ex 6:\nescreva um valor de um produto:");
+scanf("%f", &valor);
+printf("\nesse valor com desconto fica %.2f\n", (valor*0.9));
 
 //ex 7
 
+float prod1, prod2;
 
+printf("ex 5:\nescreva um valor de dois produtos:");
+scanf("%f %f", &prod1, &prod2);
+printf("\no total da compra é %.2f\n", (prod1+prod2));
 
 //ex 8
+
+char letra2; 
+int idade;
+float altura;
+
+printf("ex 8:\nescreva uma letra, a idade e a altura:\n");
+scanf(" %c %d %f", &letra, &idade, &altura);
+printf("\na letra, idade e altura escritas foram respectivamente:\n%c\n%d\n%.2f\n", letra2, idade, altura);
 
 return 0;
 }
